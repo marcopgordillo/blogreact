@@ -38,6 +38,13 @@ public class CacheConfiguration {
             cm.createCache(com.example.blogreact.domain.User.class.getName(), jcacheConfiguration);
             cm.createCache(com.example.blogreact.domain.Authority.class.getName(), jcacheConfiguration);
             cm.createCache(com.example.blogreact.domain.User.class.getName() + ".authorities", jcacheConfiguration);
+            cm.createCache(com.example.blogreact.domain.Category.class.getName(), jcacheConfiguration);
+            cm.createCache(com.example.blogreact.domain.Category.class.getName() + ".entries", jcacheConfiguration);
+            cm.createCache(com.example.blogreact.domain.Tag.class.getName(), jcacheConfiguration);
+            cm.createCache(com.example.blogreact.domain.Blog.class.getName(), jcacheConfiguration);
+            cm.createCache(com.example.blogreact.domain.Blog.class.getName() + ".entries", jcacheConfiguration);
+            cm.createCache(com.example.blogreact.domain.Entry.class.getName(), jcacheConfiguration);
+            cm.createCache(com.example.blogreact.domain.Entry.class.getName() + ".tags", jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }
