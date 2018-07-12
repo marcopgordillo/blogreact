@@ -1,0 +1,11 @@
+version: '2'
+services:
+    blogreact-postgresql:
+        image: postgres:10.4
+        # volumes:
+        #     - ~/volumes/jhipster/blogreact/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=blogreact
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
